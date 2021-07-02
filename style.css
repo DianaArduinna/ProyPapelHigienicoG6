@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --white: #f3f3f3;
+  --green: rgb(15, 205, 205);
+  --yellow-alpha: rgba(0, 238, 255, 0.6);
+  --light-yellow: rgba(255, 165, 0, 0.5)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--light-yellow);
+  background-image: linear-gradient(
+    115deg,
+    rgba(24, 245, 190, 0.4),
+    rgba(164, 165, 161, 0.3)
+  ),
+    url(img/fogTree.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+
+label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+  font-size: 1.253rem;
+}
+
+p {
+  font-size: 1.253rem;
+}
+
+h1, h2,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+input,
+select,
+textarea,
+button {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+img{
+    height: 40%;
+    width: 40%;
+    border-radius: 10px;
+    padding-bottom: 1%;
+}
+
+button {
+  border: 1px solid;
+}
+
+.container {
+  margin: 3rem auto 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.description {
+  font-style: italic;
+  font-weight: 400;
+}
+
+.parentheses {
+  font-size: 1rem;
+}
+
+.text-center {
+  text-align: center;
+  text-shadow: 5px 5px 15px #1c7ba7;
+}
+
+/* styling form */
+
+form {
+  background: var(--yellow-alpha);
+  border: 1px solid;
+  border-radius: 1.5rem;
+  box-shadow: 5px 1px 10px #022708;
+  padding: 2rem;
+}
+
+.form-group {
+  margin: 0 auto 1.4rem;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.35rem;
+}
+
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  background: var(--green);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #094d0f;
+}

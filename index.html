@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Contador Papel Higiénico</title>
+</head>
+<body>
+  
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Contador de papel higiénico</h1>
+    <p id="description" class="description text-center">Gracias por responder e informarte acerca del impacto ambiental de nuestro vida cotidiana.</p>
+  </header>
+
+  <form id="survey-form">
+    <!--- First Question --->
+    <h1 id="resultado" class="text-center">Resultado: </h1>
+    <div class="form-group">
+      <label id="respuesta" class="text-center"></label>
+      <label id="respuestaHojaAnual" class="text-center"></label>
+    </div>
+    <!--- Second Question --->
+    <div class="form-group">
+      <label id="respuestaArbol" class="text-justify"></label>
+    </div>
+    <!--- Third question --->
+    <div class="form-group text-center">
+      <img src="/img/giphypapel.gif" alt="Arboles deforestados"> 
+    </div>
+    <!--- Forth Question --->
+    <div class="form-group">
+        <label id="text-label" class="text-center">Para un mejor cuidado de los árboles, prefiere papel reciclado, ya que se puede reutilizar hasta 7 veces.</label>
+        <p id="text-label" class="text-center">Si quieres más información haz  <a href="https://www.enestadocrudo.com/papel-higienico-ecologico/"> click aquí</a></p>
+    </div>
+
+  </form>
+  
+</div>
+   
+    
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
